@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="jumbotron text-center">Chatterbot in Python using Flask Framework</h1>
+    <div style="padding-top: 50px; margin-bottom: 50px; font-size: large; background-color: black; color: white; text-align: center; font-family: 'Roboto Slab', serif;">Chatterbot in Python using Flask Framework</div>
 <div class="container">
     <div class="row">
         <div class="col-sm-6 offset-sm-3">
@@ -17,7 +20,17 @@
             </div>
             <div id="userInput">
                 <input id="textInput" class="form-control" type="text" name="msg" placeholder="Type Your Message Here">
-                <input id="buttonInput" class="btn btn-success form-control" type="submit" value="Send">
+                <button id="buttonInput">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Send</span>
+                  </button>
             </div>
         </div>
     </div>
