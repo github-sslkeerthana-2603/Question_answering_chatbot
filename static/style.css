@@ -14,11 +14,12 @@ h1{
 }
 #textInput {
     border: none;
-    width: 427px;
+    width: 420px;
     float: left;
     margin-top: 5px;
     color: black;
     margin-bottom: 100px;
+    margin-right: 3px;
 }
 .userText {
     color: white;
@@ -55,6 +56,7 @@ h1{
     border-color: black !important;
     width: 544px;
     height: 420px;
+    overflow: scroll;
 }
 #buttoninput{
     float: right;
