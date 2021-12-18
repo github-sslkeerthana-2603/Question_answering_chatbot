@@ -36,6 +36,7 @@
     </div>
 <script>
     function getResponse() {
+	$('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
         let userText = $("#textInput").val();
         let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
         $("#textInput").val("");
@@ -45,6 +46,10 @@
         var botHtml = '<p class="botText"><span>' + data + '</span></p>';
         $("#chatbox").append(botHtml);
         document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+	$('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
+
+var objDiv = document.getElementById("chatbox");
+objDiv.scrollTop = objDiv.scrollHeight;
 });
 }
     $("#textInput").keypress(function(e) {
@@ -63,7 +68,3 @@
 </div>
 </body>
 </html>
-<script>
-var objDiv = document.getElementById("chatbox");
-objDiv.scrollTop = objDiv.scrollHeight;
-</script>
